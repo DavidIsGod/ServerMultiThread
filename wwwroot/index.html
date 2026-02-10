@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Web HTTP/1.0 - Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .info {
+            background-color: #e7f3ff;
+            border: 1px solid #b6d4fe;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .test-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #007bff;
+        }
+        img {
+            max-width: 300px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌐 Servidor Web HTTP/1.0</h1>
+    
+    <div class="info">
+        <strong>¡Bienvenido!</strong> Este es un servidor web multi-hilos implementado en Java.
+        <br>Soporta HTTP/1.0 con método GET.
+    </div>
+    
+    <div class="test-section">
+        <h2>📋 Características del Servidor</h2>
+        <ul>
+            <li>Puerto TCP configurable (mayor a 1024)</li>
+            <li>Multi-hilos (un hilo por solicitud)</li>
+            <li>Interpreta solicitudes HTTP/1.0 GET</li>
+            <li>Muestra línea de solicitud y headers en consola</li>
+            <li>Respuestas HTTP válidas con CRLF</li>
+            <li>Soporte para HTML, JPG y GIF</li>
+            <li>Manejo de errores 404</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>🧪 Pruebas de Recursos</h2>
+        <p>Prueba los siguientes enlaces:</p>
+        <ul>
+            <li><a href="/test.html">Página de prueba HTML</a></li>
+            <li><a href="/test.jpg">Imagen JPG</a></li>
+            <li><a href="/test.gif">Imagen GIF</a></li>
+            <li><a href="/noexiste.html">Recurso inexistente (404)</a></li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>🖼️ Imágenes de Prueba</h2>/test.jpg
+        <p>Si las imágenes están disponibles:</p>
+        <img src="https://i.pinimg.com/originals/1d/40/0e/1d400e79e924b844848049f3e52172b2.jpg" alt="Imagen JPG de prueba">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJnbnh4ZGNmcWI0bTd6NHo3ZHcyZ210YW00cnRuMnJjNm85Z3JodiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IRFQYGCokErS0/giphy.gif" alt="Imagen GIF de prueba">
+    </div>
+    
+    <footer style="margin-top: 30px; color: #666; font-size: 12px;">
+        <hr>
+        <p>Servidor Web HTTP/1.0 - Comunicaciones e Internet II - Universidad Icesi</p>
+    </footer>
+</body>
+</html>
